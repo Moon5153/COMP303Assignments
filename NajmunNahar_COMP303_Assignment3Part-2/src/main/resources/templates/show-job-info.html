@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+
+<!-- Botstrap CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+	
+<title>Job List</title>
+</head>
+<body>
+	<div class="container">
+		<table class="table table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Job Id</th>
+				<th>Job Type</th>
+				<th>Description</th>
+				<th>Qualification</th>
+				<th>Salary</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr th:each="job : ${jobList}">
+			<td th:text="${job.jobId}">Job Id</td>
+			<td th:text="${job.jobType}">Job Type</td>
+			<td th:text="${job.description}">Description</td>
+			<td th:text="${job.qualification}">Qualification</td>
+			<td th:text="${job.salary}">Salary</td>
+		</tr>
+		</tbody>
+		</table>
+    	<strong><a href="/" class="btn btn-primary" style="width:200px">Go back</a></strong>
+	</div>
+</body>
+</html>

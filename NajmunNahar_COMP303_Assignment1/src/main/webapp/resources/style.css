@@ -1,0 +1,53 @@
+@charset "ISO-8859-1";
+.red{
+	color:red;
+}
+.form-wrapper label,p{
+	font-weight:bold;
+}
+.form-wrapper small{
+	font-size:10px;
+	color:#b3b3b3;
+}
+.padding-right{
+	padding-right:4px;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+.btn-primary,.btn-default{
+	width:200px;
+	padding:15px;
+	font-weight:bold;
+	font-size:25px;
+}
+.btn-default{
+	background-color:#999999;
+	color:white;
+}
+/*--Second Page--*/
+.result_wrapper{
+	font-family: "Times New Roman", Times, serif;
+}
+.result_wrapper p{
+	color:#9712db;
+}
+.result_wrapper h5{
+	color:#0e2da1;
+	font-weight:bold;
+}
+.title{
+	color:#3d71c1;
+	font-weight:bold;
+}
+.first_wrapper li{
+	color:#9712db;
+}
+.result_wrapper span{
+	font-weight:bold;
+}
+.list_wrapper li{
+	color:#0e2da1;
+	list-style:none;
+}

@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+.card-wrapper{
+		padding:30px;
+		margin-top:50px;
+		border:3px solid grey;
+}
+.card-wrapper2{
+	border:3px solid grey;
+}
+small{
+	color:grey;
+	font-style:bold;
+}
+.button{
+	background:#8686f5;
+	padding:10px;
+	color:white;
+	font-size:17px;
+	font-weight:bold;
+	width:100%;
+	border:none;
+	cursor:pointer;
+}
+.form-container{
+	padding:20px;
+}
+.signup-container{
+	padding:40px;
+}
+.sign-up{
+	background-color:#b3b3ed;
+}
+
+.sign-up img{
+	width:100%;
+	margin-top:150px;
+	
+}
+.credit img{
+	width:70%;
+	margin-left:100px;
+	margin-top:20px;
+}
+.profile img{
+	width:100%;
+	margin-top:150px;
+}
+.car img{
+	width:70%;
+	margin-left:100px;
+	margin-top:20px;
+	
+}
+.home_text{
+	background-color:#a8cef7;
+}
+.icon{
+	width:50px;
+	height:50px;
+}

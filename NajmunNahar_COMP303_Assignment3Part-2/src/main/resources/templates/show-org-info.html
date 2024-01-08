@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Organization List</title>
+
+<!-- Botstrap CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+	
+</head>
+<body>
+	<div class="container">
+		<table class="table table-striped">
+	<thead class="thead-dark">
+		<tr>
+			<th>Organization Id</th>
+			<th>Organization Name</th>
+			<th>Address</th>
+			<th>Phone</th>
+			<th>Website</th>
+		</tr>
+	<thead>
+	<tbody>
+		<tr th:each="organization : ${organizationList}">
+			<td th:text="${organization.orgId}">Organization Id</td>
+			<td th:text="${organization.orgName}">Organization Name</td>
+			<td th:text="${organization.address}">Address</td>
+			<td th:text="${organization.phone}">Phone</td>
+			<td th:text="${organization.website}">Website</td>
+		</tr>
+	</tbody>
+	</table>
+	<strong><a href="/" class="btn btn-primary" style="width:200px">Go back</a></strong>
+	</div>
+	
+    
+
+</body>
+</html>
